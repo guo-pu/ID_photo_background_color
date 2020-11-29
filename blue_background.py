@@ -58,4 +58,3 @@ if s > 0:
 k = cv2.waitKey(0)
 if k =='q':
   cv2.destroyAllWindows()
-
