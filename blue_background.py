@@ -31,10 +31,10 @@ mask = cv2.inRange(hsv, lower_blue, upper_blue)
 
 
 # 先膨胀，再腐蚀
-dilate=cv2.dilate(mask,None,iterations=3)
+dilate=cv2.dilate(mask,None,iterations=1)
 cv2.imshow('dilate',dilate)
 
-erode=cv2.erode(dilate,None,iterations=4)
+erode=cv2.erode(dilate,None,iterations=1)
 cv2.imshow('erode',erode)
 
 # 遍历替换
