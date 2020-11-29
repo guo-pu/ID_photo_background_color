@@ -16,7 +16,7 @@ import cv2
 import numpy as np
 
 # 读取照片
-img=cv2.imread('test.jpg')
+img=cv2.imread('test.jpg') # 输入需要转换的图片名称
 
 # 图像缩放——可选
 # img = cv2.resize(img,None,fx=0.5,fy=0.5)
