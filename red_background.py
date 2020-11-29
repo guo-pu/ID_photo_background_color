@@ -2,7 +2,7 @@
 # 作者：guo-pu
 # 功能：把证件照的底色替换成红色
 # 输入：证件照图片
-# 输出：以白色为底色的证件照
+# 输出：以红色为底色的证件照
 # 编写时间：2020-11-22
 
 
@@ -41,7 +41,7 @@ cv2.imshow('erode',erode)
 for i in range(rows):
   for j in range(cols):
     if erode[i,j]==255:
-      img[i,j]=(0,0,255) #白色底部--此处替换颜色，为BGR通道，不是RGB通道
+      img[i,j]=(0,0,255) #红色底部--此处替换颜色，为BGR通道，不是RGB通道
 cv2.imshow('res',img)
 
 # 保存图片 可以以png、jpg、bmp方式保存，默认是以.png保存
