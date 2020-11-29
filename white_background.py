@@ -45,7 +45,7 @@ for i in range(rows):
 cv2.imshow('res',img)
 
 # 保存图片 可以以png、jpg、bmp方式保存，默认是以.png保存
-s = cv2.imwrite('output_picture1.png',img)
+s = cv2.imwrite('output_picture_white.png',img)
 if s > 0:
   print("图片底色替换为白色，并保存成功！！")
 
